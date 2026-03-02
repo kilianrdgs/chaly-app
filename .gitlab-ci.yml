@@ -1,0 +1,14 @@
+stages:
+  - lint
+
+lint:
+  stage: lint
+  image: node:20.19.4-alpine
+  script:
+    - corepack enable
+    - corepack prepare yarn@1.22.19 --activate
+    - yarn install --frozen-lockfile
+    - yarn lint
+    - yarn format
+  after_script:
+    - echo "Lint terminé"
