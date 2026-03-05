@@ -58,25 +58,25 @@ L'application suit une architecture React Native classique avec Expo Router pour
 
 ## Stack technique
 
-| Catégorie | Technologies |
-|---|---|
-| Langage | TypeScript |
-| Framework | React Native 0.76, Expo SDK 52 |
-| Navigation | Expo Router 4 (file-based) |
-| État global | Zustand 5 |
-| Styling | NativeWind 4 (TailwindCSS 3) |
-| Caméra | react-native-vision-camera 4 |
-| Carte | Mapbox (@rnmapbox/maps) |
-| Analytics | Mixpanel |
-| Notifications | expo-notifications |
-| Auth | JWT (expo-secure-store) |
-| Linter/Formatter | Biome |
-| Tests | Jest + jest-expo, Testing Library |
-| Build | EAS Build (Expo Application Services) |
-| Déploiement | Fastlane (iOS + Android) |
-| CI | GitLab CI (lint) |
-| Package Manager | Yarn 1.22 |
-| Ruby | 3.2.2 (Fastlane) |
+| Catégorie        | Technologies                          |
+| ---------------- | ------------------------------------- |
+| Langage          | TypeScript                            |
+| Framework        | React Native 0.76, Expo SDK 52        |
+| Navigation       | Expo Router 4 (file-based)            |
+| État global      | Zustand 5                             |
+| Styling          | NativeWind 4 (TailwindCSS 3)          |
+| Caméra           | react-native-vision-camera 4          |
+| Carte            | Mapbox (@rnmapbox/maps)               |
+| Analytics        | Mixpanel                              |
+| Notifications    | expo-notifications                    |
+| Auth             | JWT (expo-secure-store)               |
+| Linter/Formatter | Biome                                 |
+| Tests            | Jest + jest-expo, Testing Library     |
+| Build            | EAS Build (Expo Application Services) |
+| Déploiement      | Fastlane (iOS + Android)              |
+| CI               | GitLab CI (lint)                      |
+| Package Manager  | Yarn 1.22                             |
+| Ruby             | 3.2.2 (Fastlane)                      |
 
 ## Installation
 
@@ -228,25 +228,25 @@ L'application communique avec une API REST hébergée sur `cuitemap.com/api`. To
 
 ### Endpoints principaux
 
-| Méthode | Endpoint | Description |
-|---|---|---|
-| POST | `/authentification/request-code` | Envoyer un code SMS |
-| POST | `/authentification/verify-code` | Vérifier le code SMS |
-| POST | `/authentification/verify-token` | Vérifier/rafraîchir le JWT |
-| GET | `/authentification/verify-username` | Vérifier la disponibilité d'un pseudo |
-| GET | `/authentification/ping` | Health check du serveur |
-| GET | `/cuites/list` | Liste paginée des cuites (`limit`, `cursor`, `type`, `pseudo`) |
-| POST | `/cuites` | Créer une cuite (multipart/form-data) |
-| DELETE | `/cuites/:id` | Supprimer une cuite |
-| POST | `/pictures/analyse` | Analyse IA d'une photo (multipart) |
-| POST | `/social/cuites/:id/like` | Liker une cuite |
-| DELETE | `/social/cuites/:id/like` | Retirer un like |
-| POST | `/social/cuites/:id/comment` | Commenter une cuite |
-| GET | `/social/cuites/:id/comments` | Lister les commentaires |
-| GET | `/social/cuites/:id/likes` | Lister les likes |
-| GET | `/users/global-posts` | Classement global par publications |
-| GET | `/users/:pseudo` | Informations d'un utilisateur |
-| GET | `/challenges` | Liste des challenges |
+| Méthode | Endpoint                            | Description                                                    |
+| ------- | ----------------------------------- | -------------------------------------------------------------- |
+| POST    | `/authentification/request-code`    | Envoyer un code SMS                                            |
+| POST    | `/authentification/verify-code`     | Vérifier le code SMS                                           |
+| POST    | `/authentification/verify-token`    | Vérifier/rafraîchir le JWT                                     |
+| GET     | `/authentification/verify-username` | Vérifier la disponibilité d'un pseudo                          |
+| GET     | `/authentification/ping`            | Health check du serveur                                        |
+| GET     | `/cuites/list`                      | Liste paginée des cuites (`limit`, `cursor`, `type`, `pseudo`) |
+| POST    | `/cuites`                           | Créer une cuite (multipart/form-data)                          |
+| DELETE  | `/cuites/:id`                       | Supprimer une cuite                                            |
+| POST    | `/pictures/analyse`                 | Analyse IA d'une photo (multipart)                             |
+| POST    | `/social/cuites/:id/like`           | Liker une cuite                                                |
+| DELETE  | `/social/cuites/:id/like`           | Retirer un like                                                |
+| POST    | `/social/cuites/:id/comment`        | Commenter une cuite                                            |
+| GET     | `/social/cuites/:id/comments`       | Lister les commentaires                                        |
+| GET     | `/social/cuites/:id/likes`          | Lister les likes                                               |
+| GET     | `/users/global-posts`               | Classement global par publications                             |
+| GET     | `/users/:pseudo`                    | Informations d'un utilisateur                                  |
+| GET     | `/challenges`                       | Liste des challenges                                           |
 
 ## Tests
 
@@ -297,4 +297,4 @@ Le déploiement utilise **EAS Build** pour les builds cloud et **Fastlane** pour
 
 ## Auteur
 
-Développé par **krdgs** (identifiant package Android : `com.krdgs.app`, organisation Expo : `cuitemap`).
+Développé par **Kilian Rodrigues** (identifiant package Android : `com.krdgs.app`, organisation Expo : `cuitemap`).
