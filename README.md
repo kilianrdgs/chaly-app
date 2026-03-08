@@ -1,5 +1,7 @@
 # Chaly
 
+Présentation du parcours utilisateur disponible ici 👉 https://youtube.com/shorts/g5iDixabZ-E?feature=share
+
 Application mobile de partage de photos géolocalisées en temps réel. Les utilisateurs prennent des photos, les publient avec une localisation, et interagissent via un feed social (likes, commentaires, classement).
 
 ## Contexte du projet
